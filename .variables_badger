@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export PGUSER=yourdatabaseuser
+export PGPASSWORD=yourdatabasepass
+export PGPORT=yourdatabaseport
+export PGDB=yourdatabasename
+export PGDATA=$(psql -p $PGPORT -U $PGUSER -d $PGDB -Atqc 'SHOW data_directory;')
+export CLIENT=clientname
+export DATEREPORT=$(date +%d-%m-%y)
+export SOURCEMAIL=agent@sample.com
+export DESTMAIL=agent@sample.com
+export EMAILPASS=yourmailpass
