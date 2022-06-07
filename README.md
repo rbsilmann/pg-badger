@@ -1,11 +1,12 @@
-# pgbadger
+# pgbadger <h1>
 Observability project with PGBadger
 
-Requirements:
+## Requirements: <h2>
 
-O. S.: RedHat based OS
-Packages: pgbadger and sendemail
+* O. S.: RedHat based OS
+* Packages: pgbadger and sendemail
 
+## Step by step <h2>
 1. sudo yum -y install pgbadger sendemail
 2. sudo mkdir /pg_badger
 3. Put the files '.variables_badger', 'agent-pgbadger.sh' and 'alter_system.sql' on directory /pg_badger
