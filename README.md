@@ -5,6 +5,7 @@
 
 >Requirements:
 >* Operational system: tested on CentOS
+>* PostgreSQL version: tested on PostgreSQL 12
 >* Packages: pgbadger and sendemail
 
 >Step by step:
