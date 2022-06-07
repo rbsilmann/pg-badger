@@ -1,9 +1,10 @@
 # pgbadger <h1>
-Observability project with PGBadger
+
+## Description: <h2>
+Observability project with PGBadger.
 
 ## Requirements: <h2>
-
-* O. S.: RedHat based OS
+* Operational system: tested on CentOS
 * Packages: pgbadger and sendemail
 
 ## Step by step <h2>
