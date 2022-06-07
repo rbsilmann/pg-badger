@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# Ler as variaveis para executar os comandos.
+# Read file with variables
 source /pg_badger/.variables_badger
 
-# Verificar e remover logs mais antigos que tres dias.
+# Remove log files older 3 days
 find $PGDATA/log/* -name "*.log" -mtime +3 -exec rm {} \;
 
-# Gerar relatorio com base na pasta log.
+# Generate report
 pgbadger -o /tmp/"$CLIENT"-"$DATEREPORT".html $PGDATA/log/*
 
-# Enviar relatorio gerado via email.
+# Send report
 sendEmail -f $SOURCEMAIL \
 	-t $DESTMAIL \
 	-s smtp.gmail.com:587 \
