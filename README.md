@@ -112,12 +112,12 @@ Configure uma tarefa no `cron` para executar o script periodicamente e enviar re
 ## **Resolução de Problemas**  
 
 1. **Relatórios Não São Gerados:**  
-   - Verifique se os logs estão sendo gerados no diretório especificado (`LOGDIR`).  
+   - Verifique se os logs estão sendo gerados no diretório especificado (`PGDATA/log`).  
    - Confirme que o PostgreSQL está configurado corretamente com o `alter_system.sql`.  
 
 2. **Problemas com Envio de E-mails:**  
    - Teste o `sendemail` manualmente para verificar as configurações.  
-   - Confirme que a variável `EMAIL` no `.variables_badger` está configurada corretamente.  
+   - Confirme que as variáveis referentes ao `email` no `.variables_badger` estão configuradas corretamente.  
 
 3. **Permissões:**  
    - Garanta que o usuário do PostgreSQL tenha acesso ao diretório `/pg_badger` e aos arquivos de log.  
