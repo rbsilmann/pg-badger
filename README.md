@@ -1,4 +1,4 @@
-### README: Observabilidade com PGBadger  
+### Observabilidade com PGBadger  
 
 ---
 
