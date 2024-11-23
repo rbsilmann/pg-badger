@@ -102,7 +102,7 @@ Execute o script `agent-pgbadger.sh` para analisar os logs e gerar relatórios:
 ```
 
 ### **Visualizar Relatórios**  
-Os relatórios serão gerados no diretório especificado na variável `OUTPUTDIR`.  
+Os relatórios serão gerados no diretório especificado no script `agent-pgbadger.sh`. Default: /tmp
 
 ### **Automatizar Geração e Envio**  
 Configure uma tarefa no `cron` para executar o script periodicamente e enviar relatórios por e-mail.  
