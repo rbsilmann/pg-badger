@@ -13,7 +13,7 @@ pgbadger -o /tmp/"$CUSTOMER"-"$DATEREPORT".html $PGDATA/log/*
 sendEmail -f $SOURCEMAIL \
 	-t $DESTMAIL \
 	-s smtp.gmail.com:587 \
-	-u "Customer report - PGBadger: $CLIENT" \
+	-u "Customer report - PGBadger: $CUSTOMER" \
 	-m "Greetings, follow the report of the day: $DATEREPORT" \
 	-a /tmp/"$CUSTOMER"-"$DATEREPORT".html \
 	-xu $SOURCEMAIL \
